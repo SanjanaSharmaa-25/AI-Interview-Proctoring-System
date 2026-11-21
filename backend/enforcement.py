@@ -11,8 +11,8 @@ For quick testing, set environment variables before starting the server:
 import os
 import time
 
-WARNING_SECONDS = float(os.environ.get("WARNING_SECONDS", 120))    # 2 minutes
-BLACKOUT_SECONDS = float(os.environ.get("BLACKOUT_SECONDS", 300))  # 5 minutes
+WARNING_SECONDS = float(os.environ.get("WARNING_SECONDS", 5))    # 5 seconds
+BLACKOUT_SECONDS = float(os.environ.get("BLACKOUT_SECONDS", 20))  # 20 seconds
 RESET_GRACE_SECONDS = float(os.environ.get("RESET_GRACE_SECONDS", 10))
 SUSPICIOUS_SCORE = 35  # same cut-off the app uses for the "Elevated" level
 
